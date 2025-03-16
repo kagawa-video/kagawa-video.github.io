@@ -11,7 +11,9 @@
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
-    padding: 20px;
+    /* padding: 20px; */
+    margin: 0;
+    padding: 0;
   }
   
   /* Header and Navigation */
@@ -57,9 +59,10 @@
     display: grid;
     grid-gap: 10px;
     /* Auto-fit will create as many columns as possible while each column is at least 200px wide */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 20px auto;
     max-width: 1200px; /* Optional maximum width for your gallery */
+    width: 90%;
   }
   
   .gallery img {
