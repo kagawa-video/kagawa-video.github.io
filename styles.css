@@ -11,7 +11,7 @@
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
-    /* padding: 20px; */
+    padding: 20px;
     margin: 0;
     padding: 0;
   }
@@ -54,27 +54,32 @@
     border-radius: 5px;
   }
 
-  .gallery {
+/* Gallery container: add position relative so Masonry can position items */
+.gallery {
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
+    position: relative;  /* <-- Key for Masonry positioning */
   }
   
-  /* Sizer element to control column width */
+  /* Sizer element to define the column width.
+     Make sure it’s a block-level element. */
   .masonry-sizer {
-    width: 33.33%;  /* Adjust this percentage for the desired number of columns */
+    width: 20%;  /* Use 20% for 5 columns; adjust as needed (e.g., 33.33% for 3 columns) */
+    display: block;
   }
   
-  /* Gallery item styling */
+  /* Gallery items: remove inline-block styling so Masonry can position them */
   .gallery-item {
     margin-bottom: 10px;
-    display: inline-block;  /* Ensures proper flow in the column layout */
+    /* Do not force a display type here; let Masonry handle positioning */
   }
   
+  /* Images: make sure they fill their container properly */
   .gallery-item img {
     width: 100%;
-    height: auto;
     display: block;
+    height: auto;
     border-radius: 5px;
   }
 
