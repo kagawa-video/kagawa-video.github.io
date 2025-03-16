@@ -36,6 +36,8 @@
 
             <div class="gallery">
 
+                <div class="masonry-sizer"></div>
+
                 <div class="gallery-item">
                     <img src="https://res.cloudinary.com/de5m2zd8r/image/upload/v1742090778/untitled-140_gqmzi5.jpg" alt="Landscape Photo"> 
                 </div> 
@@ -51,6 +53,7 @@
             </div> 
 
         </section> 
+
     </main>
 
     <!-- Footer -->
@@ -60,6 +63,23 @@
 
     <!-- External JavaScript file (if needed) -->
     <script src="script.js"></script>
+
+      <!-- Include Masonry library -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+  <!-- Initialize Masonry -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elem = document.querySelector('.gallery');
+      var msnry = new Masonry( elem, {
+        // Set items and sizing
+        itemSelector: '.gallery-item',
+        columnWidth: '.masonry-sizer', // Use the sizer element to set column width
+        percentPosition: true,
+        gutter: 10
+      });
+    });
+  </script>
 </body>
 
 </html>

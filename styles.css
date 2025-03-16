@@ -54,41 +54,28 @@
     border-radius: 5px;
   }
 
-/* CSS for a mosaic (masonry) gallery using CSS columns */
-.gallery {
-    column-count: 3;            /* Adjust the number of columns as needed */
-    column-gap: 10px;           /* Spacing between columns */
+  .gallery {
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
   }
   
-  .gallery img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
+  /* Sizer element to control column width */
+  .masonry-sizer {
+    width: 33.33%;  /* Adjust this percentage for the desired number of columns */
   }
-
-  /* Styles for individual gallery items */
+  
+  /* Gallery item styling */
   .gallery-item {
-    /* Ensure the items behave as block-level elements in the column layout */
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 10px;        /* Spacing between items */
+    margin-bottom: 10px;
+    display: inline-block;  /* Ensures proper flow in the column layout */
   }
-
-  /* Create a square container (adjust padding-top if you want a different ratio) */
-.gallery-item::before {
-    content: "";
-    display: block;
-    padding-top: 100%; /* 100% makes it square */
-  }
-
+  
   .gallery-item img {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 5px;
   }
 
   /* Responsive Vimeo embed container */
