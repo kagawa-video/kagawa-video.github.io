@@ -65,7 +65,7 @@
   /* Sizer element to define the column width.
      Make sure it’s a block-level element. */
   .masonry-sizer {
-    width: 20%;  /* Use 20% for 5 columns; adjust as needed (e.g., 33.33% for 3 columns) */
+    width: 33.33%;  /* Use 20% for 5 columns; adjust as needed (e.g., 33.33% for 3 columns) */
     display: block;
   }
   
