@@ -52,18 +52,21 @@
     border-radius: 5px;
   }
 
-  /* Gallery Styles */
+/* Responsive Gallery Collage using CSS Grid */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    display: grid;
+    grid-gap: 10px;
+    /* Auto-fit will create as many columns as possible while each column is at least 200px wide */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0 auto;
+    max-width: 1200px; /* Optional maximum width for your gallery */
   }
   
   .gallery img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 5px;
+    object-fit: cover;
+    display: block;
   }
   
   /* Footer */
