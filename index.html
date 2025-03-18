@@ -33,18 +33,31 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Kagawa Creative Media</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Visual Stories, Crafted to Inspire</h2>
-                        <a class="btn btn-primary" href="#about">Get Started</a>
-                    </div>
+        <!-- Video Header Test -->
+
+        <header>
+
+            <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+            <div class="overlay"></div>
+          
+            <!-- The HTML5 video element that will create the background video on the header -->
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+              <source src="https://res.cloudinary.com/de5m2zd8r/video/upload/v1742288206/Vidheader-1_shqwm6.mp4" type="video/mp4">
+            </video>
+          
+            <!-- The header content -->
+            <div class="container h-100">
+              <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                  <h1 class="display-3">KAGAWA CREATIVE MEDIA</h1>
+                  <p class="lead mb-0">Visual Stories, Crafted to Inspire</p>
+                  <p></p>
+                  <a class="btn btn-primary" href="#about">Get Started</a>
                 </div>
+              </div>
             </div>
-        </header>
+          </header>
+        
         <!-- About-->
         <section class="about-section text-center" id="about">
             <div class="container px-4 px-lg-5">
@@ -52,7 +65,9 @@
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">Your Brand. Enhanced.</h2>
                         <p class="text-white-50">
-                            Videos can enhance the image of your brand and change the perception by your customers.
+                            Capture attention, boost engagement, and drive sales with the power of video. 
+                            Studies show that viewers retain 95% of a message in video versus just 10% in text, and businesses using video see 49% faster revenue growth. 
+                            Let us help you harness the undeniable impact of video to achieve your business goals.
                         </p>
                     </div>
                 </div>
@@ -73,8 +88,10 @@
                     </div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Real Estate</h4>
-                            <p class="text-black-50 mb-0">Copy about real estate, highlighting why it is crucial to have videos.</p>
+                            <h4>Video</h4>
+                            <p class="text-black-50 mb-0">Elevate your visual storytelling with our comprehensive videography services. 
+                                We craft compelling promotional videos, capture stunning aerial perspectives with state-of-the-art drone technology, 
+                                and create engaging social media content that connects your brand with your audience.</p>
                         </div>
                     </div>
                 </div>
@@ -89,8 +106,10 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Architecture</h4>
-                                    <p class="mb-0 text-white-50">Copy about architectural videos and why one should have them.</p>
+                                    <h4 class="text-white">Photography</h4>
+                                    <p class="mb-0 text-white-50">Transform spaces into visual narratives through our expert photography. 
+                                        Our specialized real estate and architectural photography services showcase properties in their most compelling light, 
+                                        featuring high-resolution ground and aerial imagery that highlights every detail and unique characteristic.</p>
                                 </div>
                             </div>
                         </div>
@@ -107,8 +126,10 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Travel</h4>
-                                    <p class="mb-0 text-white-50">Copy abot creating travel videos and how they can help bring clients.</p>
+                                    <h4 class="text-white">Design</h4>
+                                    <p class="mb-0 text-white-50">Strategic visual branding that communicates your business's essence. 
+                                        We deliver innovative web design and comprehensive branding solutions that create memorable, professional identities, 
+                                        ensuring your digital presence is as impressive and strategic as your business objectives.</p>
                                 </div>
                             </div>
                         </div>
@@ -195,11 +216,12 @@
                         </div>
                     </div>
                 </div>
+                <!-- 
                 <div class="social d-flex justify-content-center">
                     <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                     <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                     <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
-                </div>
+                </div> -->
             </div>
         </section>
         <!-- Footer-->
