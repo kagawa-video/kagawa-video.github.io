@@ -151,10 +151,10 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form class="form-signup" id="contactForm" action="https://github.us16.list-manage.com/subscribe/post?u=12b5cc9cf81eff0785e533a8e&amp;id=877095c3cc&amp;f_id=004137e0f0" method="post">
+                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN" action="https://github.us16.list-manage.com/subscribe/post?u=12b5cc9cf81eff0785e533a8e&amp;id=877095c3cc&amp;f_id=004137e0f0" method="post">
                             <!-- Email address input-->
                             <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" name="emailAddress" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
                                 <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">REQUEST</button></div>
                             </div>
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
@@ -165,12 +165,10 @@
                             <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3 mt-2 text-white">
-
-                                    <br>
-                                    <div class="fw-bolder">Form submission successful!</div>
+                                    <div class="fw-bolder">Thank You! We Will Be In Touch Shortly!</div>
                                     
                                     <br />
-                                    
+                                   
                                 </div>
                             </div>
                             <!-- Submit error message-->
